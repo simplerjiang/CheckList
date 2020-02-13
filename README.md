@@ -26,6 +26,23 @@ Becase of the project got a huge plan, I accept any who want to join the develop
 
 应采用**asp.net core 2.2**, 我认为这是目前较为成熟稳定且拥有足够经验，库，替代方案的框架版本。 或采用WebApi + JWT（或Cookie双验证），至于是否包含CRUD未定。
 
+它将提供所有的接口及数据管理。
+
+#### 网页端
+
+或采用Blazor Server， 考虑到后期迭代及重构的可能，本着就要尝鲜的精神，原本希望能直接上Blazor WebAssmebly, 但是经过一番实验发现其在3.1的预览版中的表现，并不能适用于生产环境。当然谁也不能保证，当真正写到网页端时,Blazor WebAssmebly已经出了呢。
+
+#### 移动端
+
+应采用Xamarin， 作为忠诚的.Neter，个人觉得相较于原生开发，Xamarin效率更高，且更舒服，且本身应用功能较为简单，所以决定采用。
+
+#### 桌面端
+
+毋庸置疑的WPF，这里就不过多解释，除非当真开始写的时候微软已出下一代惊人技术。
+
+#### 跨平台控制台应用？
+
+额，用处不大，未定。
 
 
 
