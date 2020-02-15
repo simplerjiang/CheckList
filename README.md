@@ -52,6 +52,36 @@ Becase of the project got a huge plan, I accept any who want to join the develop
 #### 检查单模版（CheckListTemplate)
 
 创建检查单模版，当真正使用检查单时，将自动复制成一个**检查单(CheckListEntity)**。
+同时检查单模版具备分享，被全站查询，分裂复制（fork）等功能，达到多人复用的功能。
+
+```c#
+public class CheckListTemplate
+{
+  //主键
+  [Key]
+  public GUID ID {get;set;}
+  
+  //检查单个体
+  public List<CheckListItem> Items {get;set;}
+  
+  //创建时间
+  public DateTime CreateTime {get;set;}
+  
+  //是否来自fork
+  public bool IsFork {get;set;}
+  
+  //如果是fork，原作者ID
+  public string OrignOwnerID {get;set;}
+  
+  //被使用的次数
+  public long UsedTimes {get;set;}
+  
+  //修改日志
+  public List<TemplateChangeLog> Logs {get;set;}
+  
+  
+}
+```
 
 
 
