@@ -61,8 +61,8 @@ public class CheckListTemplate
   [Key]
   public GUID ID {get;set;}
   
-  //检查单个体
-  public List<CheckListItem> Items {get;set;}
+  //检查单个体模版
+  public List<CheckListItemTemplate> Items {get;set;}
   
   //创建时间
   public DateTime CreateTime {get;set;}
@@ -79,10 +79,44 @@ public class CheckListTemplate
   //修改日志
   public List<TemplateChangeLog> Logs {get;set;}
   
+  //拥有者
+  public User Owner {get;set;}
+  
+  //检查单们
+  public List<CheckListEntity> Entitys {get;set;}
+  
+  //是否允许（用于软删除）
+  public bool IsEnable {get;set;}
   
 }
 ```
 
+
+#### 检查单个体模版(CheckListItemTemplate)
+
+检查单中每一项检查的类，即存储顺序，标题，详细内容，附加文件
+
+
+```c#
+public class CheckListItemTemplate
+{
+  //主键
+  [Key]
+  public GUID ID {get;set;}
+  
+  //标题
+  public string Title {get;set;}
+  
+  //详细内容
+  public string Detail {get;set;}
+  
+  //附加文件
+  public List<ItemFile> Files {get;set;}
+  
+  //创建实际
+  public CreateTime 
+}
+```
 
 
 
