@@ -114,9 +114,18 @@ public class CheckListItemTemplate
   public List<ItemFile> Files {get;set;}
   
   //创建实际
-  public CreateTime 
+  public DateTime CreateTime {get;set;}
+  
+  //循序
+  public int Index {get;set;}
+  
+  //归属
+  public CheckListTemplate CheckListTemplate {get;set;}
 }
 ```
 
+#### 检查单实体
+
+当模版被使用的时候，将创建一个新的检查单实体，并
 
 
