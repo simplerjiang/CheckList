@@ -22,7 +22,7 @@ Becase of the project got a huge plan, I accept any who want to join the develop
 
 ## 技术方向
 
-### 后端
+### [后端](https://github.com/simplerjiang/CheckListServer)
 
 应采用**asp.net core 2.2**, 我认为这是目前较为成熟稳定且拥有足够经验，库，替代方案的框架版本。 或采用WebApi + JWT（或Cookie双验证），至于是否包含CRUD未定。它将提供所有的接口及数据管理。
 
