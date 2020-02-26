@@ -88,6 +88,18 @@ public class CheckListTemplate
   //是否允许（用于软删除）
   public bool IsEnable {get;set;}
   
+  //名称
+  public string Name {get;set;}
+  
+  //简称
+  public string ShortName {get;set;}
+  
+  //说明
+  public string Info {get;set;}
+  
+  //标签
+  public List<Tag> Tags {get;set;}
+  
 }
 ```
 
@@ -126,6 +138,23 @@ public class CheckListItemTemplate
 
 #### 检查单实体
 
-当模版被使用的时候，将创建一个新的检查单实体，并
+当模版被使用的时候，将创建一个新的检查单实体
+
+```c#
+
+public class CheckListEntity
+{
+  [Key]
+  public GUID ID {get;set;}
+  
+  //所有者
+  public User Owner {get;set;}
+  
+  
+  
+}
+
+
+```
 
 
